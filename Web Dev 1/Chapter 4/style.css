@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #000000; 
+    background-color: #ffffff; 
+}
+
+
+header {
+    background-color: #17072b; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+header h1 {
+    font-family: 'Tahoma', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+
+nav {
+    background-color: #17072b; 
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    margin-bottom: 30px;
+}
+
+
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+
+nav ul li a:hover {
+    color: #8c15e9;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+
+.welcome {
+    flex: 2; 
+    margin-right: 20px;
+    padding: 20px 0 20px 0; 
+}
+
+
+.welcome h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #000000; 
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+
+}
+
+
+.welcome p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+
+.welcome-image {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    margin-left: 30px;
+    
+    
+}
+
+
+.line-up {
+    flex: 1; 
+    background-color: #172d67; 
+    color: #ffffff;
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.line-up h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #ffffff; 
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+.line-up ul {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+
+.line-up ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+.line-up ul li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.lineup-image {
+    width: 50%; 
+    height: 90px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+
+footer {
+    background-color: #8c15e9;
+    color: #ffffff; 
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: -15px;
+}
+
+
+footer p {
+    font-size: 0.9em;
+}

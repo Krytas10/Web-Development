@@ -1,0 +1,69 @@
+
+body {
+    background-color: #f5f5f5; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.calculator {
+    background: #1e1e1e; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(31, 29, 31, 0.4); 
+    width: 300px;
+    text-align: center;
+}
+
+
+.calculator h1 {
+    margin-bottom: 20px;
+    color: #ffffff; 
+}
+
+
+.calculator label[for="costPerLiter"],
+.calculator label[for="liters"] {
+    color: #ff0000; 
+}
+
+
+.calculator input[type="number"] {
+    width: 80%; 
+    padding: 10px;
+    margin: 10px auto 20px; 
+    display: block; 
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #eee;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.calculator button {
+    background-color: #ffffff; 
+    color: #121212; 
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.calculator button:hover {
+    background-color: #e0e0e0; 
+    transform: translateY(-2px);
+}
+
+
+.calculator p {
+    font-size: 18px;
+    color: #00ff00; 
+    margin-top: 20px;
+}

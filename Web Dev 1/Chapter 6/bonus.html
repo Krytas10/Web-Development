@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Colour Guessing Game</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="bonus.css">
+</head>
+<body>
+    <!-- Game container -->
+    <div class="game-container">
+        <h1>
+            <!-- Color "R" in red, "G" in green, "B" in blue, and the rest in black -->
+            <span style="color: #ff0000;">R</span><span style="color: #00ff00;">G</span><span style="color: #0000ff;">B</span>
+            <span style="color: #000000;"> Colour Guessing Game</span>
+        </h1>
+        <!-- Display the RGB value to guess -->
+        <div id="rgb-value"></div>
+        <!-- Display remaining lives -->
+        <div id="lives">Lives: 3</div>
+        <!-- Container for color options -->
+        <div class="color-options" id="color-options">
+            <div class="color-box" id="option1" onclick="checkGuess(0)"></div>
+            <div class="color-box" id="option2" onclick="checkGuess(1)"></div>
+            <div class="color-box" id="option3" onclick="checkGuess(2)"></div>
+        </div>
+        <!-- Feedback message for correct/incorrect guesses -->
+        <div id="feedback"></div>
+        <!-- Final score display -->
+        <div id="score"></div>
+        <!-- Replay button (hidden until game over) -->
+        <button id="replay-btn" onclick="startGame()">Play Again</button>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="bonus.js"></script>
+</body>
+</html>
